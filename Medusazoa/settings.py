@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Medusazoa.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['SCSH/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

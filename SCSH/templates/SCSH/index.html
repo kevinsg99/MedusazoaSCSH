@@ -1,0 +1,112 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="container">
+            <div style="display: inline-block;">
+                <h2 class="scheduleHeader">Schedules</h2>
+            </div>
+            <div style="margin-top: 5px;">
+                <button aria-label class="generateSchedules" type="button">
+                    <span aria-hidden="true" class="fa fa-refresh" style="color: rgb(255, 255, 255);"></span>
+                    <span style="padding-left: 5px;">Generate Schedules</span>
+                </button>
+            </div>
+            <div role="alert" class="schedulesAlert">
+                <div class="alertResult">
+                    <span>Generated <strong>3</strong> Schedules</span>
+                </div>
+                <button aria-label="Close Alert" class="alertX" type="button">
+                    <span aria-hidden="true" class="fa fa-times" style="color: rgb(115, 115, 115);"></span>
+                </button>
+            </div>
+
+            <!-- Results -->
+            <div>
+                <div class="resultsRow" role="button" tabindex="0">
+                    <span class="viewList"><a href="" aria-label="View Schedule 1">View</a></span>
+                    <span class="viewNum">1</span>
+                    <span class="viewPreview">
+                        <button class="viewPreviewButton" type="button">
+                            <span class="previewIcon zoom_in" data-radium="true" style="color: rgb(187, 0, 0);"></span>
+                        </button>
+                    </span>
+                    <span class="viewPreview">
+                        <button class="viewPreviewButton" onclick="window.open('mapRoutes.html','_blank')" type="button">
+                            <span class="mapIcon zoom_in" data-radium="true"></span>
+                        </button>
+                    </span>
+                    <span class="viewCheckbox">
+                        <input type="checkbox" style="vertical-align: middle;">
+                    </span>
+                    <span class="viewClasses">3231-Computer Science & Engineering-0030, 3461-Computer Science & Engineering-0060, 3541-Computer Science & Engineering-0020, 4252-Computer Science & Engineering-0010</span>
+                </div>
+                <div class="resultsRow" role="button" tabindex="0">
+                    <span class="viewList"><a href="" aria-label="View Schedule 1">View</a></span>
+                    <span class="viewNum">2</span>
+                    <span class="viewPreview">
+                        <button class="viewPreviewButton" type="button">
+                            <span class="previewIcon zoom_in" data-radium="true" style="color: rgb(187, 0, 0);"></span>
+                        </button>
+                    </span>
+                    <span class="viewPreview">
+                        <button class="viewPreviewButton" onclick="window.open('mapRoutes.html','_blank')" type="button">
+                            <span class="mapIcon zoom_in" data-radium="true"></span>
+                        </button>
+                    </span>
+                    <span class="viewCheckbox">
+                        <input type="checkbox" style="vertical-align: middle;">
+                    </span>
+                    <span class="viewClasses">3231-Computer Science & Engineering-0030, 3461-Computer Science & Engineering-0060, 3541-Computer Science & Engineering-0020, 4252-Computer Science & Engineering-0010</span>
+                </div>
+                <div class="resultsRow" role="button" tabindex="0">
+                    <span class="viewList"><a href="" aria-label="View Schedule 1">View</a></span>
+                    <span class="viewNum">3</span>
+                    <span class="viewPreview">
+                        <button class="viewPreviewButton" type="button">
+                            <span class="previewIcon zoom_in" data-radium="true" style="color: rgb(187, 0, 0);"></span>
+                        </button>
+                    </span>
+                    <span class="viewPreview">
+                        <button class="viewPreviewButton" onclick="window.open('mapRoutes.html','_blank')" type="button">
+                            <span class="mapIcon zoom_in" data-radium="true"></span>
+                        </button>
+                    </span>
+                    <span class="viewCheckbox">
+                        <input type="checkbox" style="vertical-align: middle;">
+                    </span>
+                    <span class="viewClasses">3231-Computer Science & Engineering-0030, 3461-Computer Science & Engineering-0060, 3541-Computer Science & Engineering-0020, 4252-Computer Science & Engineering-0010</span>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+
+        <script>
+        </script>
+
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsLI9pzus4z91Pyq1_aANnpOa8YKzE2t8&callback=initMap">
+        </script>
+    </body>
+</html>
